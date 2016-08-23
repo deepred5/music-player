@@ -4,7 +4,6 @@ $(document).ready(function() {
     var deviceWidth = 640;
     var id = 0;
     var index = 0;
-    var $loadingLi = null;
 
     var touch = {
         touchstart: 'touchstart',
