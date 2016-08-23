@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" type="text/css" href="css/core.css">
+    <script type="text/javascript" src="js/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="js/music.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="loading">
+            <div class="loading-content">
+                <div class="arc1"></div>
+                <div class="arc2"></div>
+                <div class="arc3"></div>
+                <div class="arc4"></div>
+            </div>
+            <div class="loading-content2">
+                <div class="arc1"></div>
+                <div class="arc2"></div>
+                <div class="arc3"></div>
+                <div class="arc4"></div>
+            </div>
+        </div>
+        <div id="music-list">
+            <div class="list-title" id="list-title">
+                <p>Music Player<span class="title-info"></span></p>
+            </div>
+            <div class="list-content" id="list-content">
+                <ul id="list-content-ul">
+                    <!-- <li>
+                        <h3 class="title">Saving Grace</h3>
+                        <p class="singer">The Afters</p>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="list-audio" id="list-audio">
+                <img class="list-audio-logo" src="img/logo.jpg" id="list-audio-logo">
+                <div class="list-audio-text" id="list-audio-text">
+                    <h3 class="title">DeepRed</h3>
+                    <p class="singer">音乐播放器</p>
+                </div>
+                <div class="list-audio-btn" id="list-audio-btn"></div>
+            </div>
+        </div>
+        <div id="music-lyric">
+            <div class="lyric-title" id="lyric-title">
+                <p class="lyric-name" id="lyric-name"></p>
+                <span class="title-info"></span>
+            </div>
+            <div class="lyric-content" id="lyric-content">
+                <ul id="lyric-content-list">
+                </ul>
+            </div>
+            <div class="lyric-audio" id="lyric-audio">
+                <div class="audio-container">
+                    <div class="audio-timeline">
+                        <div class="audio-curtime" id="audio-curtime"></div>
+                        <div class="audio-bar" id="audio-bar"></div>
+                    </div>
+                    <div class="curtime-num" id="curtime-num">00:00</div>
+                    <div class="totaltime-num" id="totaltime-num">03:10</div>
+                    <div class="play-btn" id="play-btn"></div>
+                    <div class="prev-btn" id="prev-btn"></div>
+                    <div class="next-btn" id="next-btn"></div>
+                </div>
+            </div>
+            <div class="lyric-message" style="" id="lyric-message">
+                <textarea placeholder="欢迎留言(=・ω・=)" id="lyric-message-text"></textarea>
+                <button type="button" id="lyric-message-btn">提交</button>
+                <ul id="lyric-message-list">
+                    <!-- <li>留言11</li>
+                    <li>留言222222</li>
+                    <li>留言3</li> -->
+                </ul>
+            </div>
+            <ul class="lyric-btn-list" id="lyric-btn-list">
+                <li class="active"></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <audio id="audio"></audio>
+</body>
+
+</html>

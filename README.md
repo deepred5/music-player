@@ -4,7 +4,7 @@ web版音乐播放器
 
 前端：jQuery + ajax
 
-后台：PHP + MySql,为前端提供api接口
+后台：PHP + MySQL,为前端提供api接口
 
 在线演示 [Music Player](http://deepred5.com/player/)
 
